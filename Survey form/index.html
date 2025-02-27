@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Survey Form | Only with CSS</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--   ****** START MAIN ******   -->
+       <main class="main">
+            <!--   ****** START FORM ******   -->
+            <form action="#" class="main__form" method="get">
+                <h1 class="main__title">Survey Form</h1>
+                <p class="main__description">Thank You For Taking Your Time To Give Us FeedBack</p>
+                <!--   ****** START Identity ******   -->
+                <fieldset class="main__fieldset">
+                    <label for="name" class="main__label">Name</label>
+                    <input type="text" class="main__input" id="name" placeholder="Enter your name" autocomplete>
+                    <label for="email" class="main__label">Email</label>
+                    <input type="text" class="main__input" id="email" placeholder="Enter your email" autocomplete>
+                    <label for="age" class="main__label">Age</label>
+                    <input type="text" class="main__input" id="age" placeholder="Enter your age" autocomplete>
+                </fieldset>
+                <!--   ****** END Identity ******   -->
+                
+                <!--   ****** START Role ******   -->
+                   <fieldset class="main__fieldset">
+                    <legend class="main__legend">Choose a role that best describes you</legend>
+                    <select name="role" id="role" class="main__select">
+                        <option value="" class="main__option">Select your role</option>
+                        <option value="student" class="main__option">Student</option>
+                        <option value="fulltime" class="main__option">Full Time Job</option>
+                        <option value="partime" class="main__option">Part Time Job</option>
+                        <option value="prefer" class="main__option">Prefer Not to Say</option>
+                        <option value="other" class="main__option">Other</option>
+                    </select>
+                   </fieldset>
+                <!--   ****** END Role ******   -->
+
+            <!--   ****** START Recommend ******   -->
+               <fieldset class="main__fieldset">
+                <legend class="main__legend">Would You Recommend Our Product To A Friend ?</legend>
+                <label for="never" class="main__label-radio"><input type="radio" name="recommendation" id="never" class="main__radio">Never</label>
+                <label for="maybe" class="main__label-radio"><input type="radio" name="recommendation" id="never" class="main__radio">Maybe</label>
+                <label for="likely" class="main__label-radio"><input type="radio" name="recommendation" id="never" class="main__radio">Likely</label>
+                <label for="definitely" class="main__label-radio"><input type="radio" name="recommendation" id="never">Definitely</label>
+               </fieldset>
+            <!--   ****** END Recommend ******   -->
+
+            <!--   ****** START Product ******   -->
+               <fieldset class="main__fieldset">
+                <legend class="main__legend">Select Things That You Liked About Our Product</legend>
+                <label for="ui" class="main__label-checkbox"><input type="checkbox" name="product" id="ui" class="main__checkbox">UI</label>
+                <label for="features" class="main__label-checkbox"><input type="checkbox" name="product" id="features" class="main__checkbox">Features</label>
+                <label for="service" class="main__label-checkbox"><input type="checkbox" name="product" id="service" class="main__checkbox">Service</label>
+                <label for="simpleness" class="main__label-checkbox"><input type="checkbox" name="product" id="simpleness" class="main__checkbox">Simpleness</label>
+               </fieldset>
+            <!--   ****** END Product ******   -->
+
+
+            <!--   ****** START Message ******   -->
+               <fieldset class="main__fieldset">
+                <legend class="main__legend">Remarks</legend>
+                <textarea name="message" id="message" cols="50" rows="15" placeholder="Tell us how can we improve..." class="main__message"></textarea>
+                <button class="main__submit">Submit</button>
+               </fieldset>
+            <!--   ****** END Message ******   -->
+            </form>
+            <!--   ****** END FORM ******   -->
+
+
+            
+       </main>
+    <!--   ****** END MAIN ******   -->
+</body>
+</html>

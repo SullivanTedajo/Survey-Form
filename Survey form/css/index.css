@@ -1,0 +1,86 @@
+@import url(global.css);
+
+.main{
+    background-color: var(--color-primary-background);
+    padding: 2em;
+}
+.main__form{
+    background-color: var(--color-white);
+    border-radius: 1em;
+    padding: 2em;
+    width: 35em;
+    max-width: 100%;
+    margin: auto;
+}
+.main__title{
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom:.5em ;
+}
+.main__description{
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic ;
+    margin-bottom: 1em;
+}
+.main__label, .main__legend{
+    font-size: 1.65em;
+    font-weight: 500;
+    display: block;
+    margin-block: .4em;
+    text-transform: capitalize;
+
+}
+.main__fieldset{
+    margin-block: 1em;
+    border: none;
+}
+.main__input, .main__select, .main__message{
+    display: block;
+    width: 100%;
+    border-radius: .3em;
+    border: .1em solid var(--color-muted);
+    padding: .8em;
+    outline: 0;
+    resize: none;
+
+    &::placeholder{
+        font-size: 1.25em;
+        text-transform: capitalize;
+    }
+}
+.main__option{
+    font-size: 1.25em;
+   
+}
+
+.main__label-radio{
+    display: block;
+    font-size: 1.2em;
+    color: var(--color-small);
+    margin-block: .15em;
+    accent-color: var(--color-black);
+    transition: accent-color .5s .5s ease-in-out;
+}
+.main__label-checkbox{
+    display: block;
+    font-size: 1.2em;
+    color: var(--color-small);
+    margin-block: .15em;
+    accent-color: var(--color-black);
+    transition: accent-color 1s 1s ease-in-out;
+
+}
+
+.main__submit{
+    display: block;
+    width: 100%;
+    padding: .5em;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
